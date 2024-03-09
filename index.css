@@ -1,0 +1,9 @@
+body>nav{
+    background-color: rgb(253, 152, 67);
+;
+}
+.icon {
+    border: 2px red solid;
+    margin: 0 auto;
+    height: 600px;
+}
