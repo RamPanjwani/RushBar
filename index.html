@@ -21,26 +21,33 @@
       href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap"
       rel="stylesheet"
     />
+    <link rel="icon" type="image/png" href="media/favicon.png" />
   </head>
   <body>
-    <nav class="navbar bg-body-tertiary">
+    <div
+      class="alert alert-warning alert-dismissible fade show alert"
+      role="alert"
+    >
+      <strong>₹10 off on first purchase. Buy Now !</strong>
+      <button
+        type="button"
+        class="btn-close"
+        data-bs-dismiss="alert"
+        aria-label="Close"
+      ></button>
+    </div>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top">
       <div class="container-fluid">
-        <center>
-          <a class="navbar-brand" href="#">₹10 OFF Buy now</a>
-        </center>
-      </div>
-    </nav>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-      <div class="container-fluid">
-        <a class="navbar-brand rushtitle" href="#">
+        <a class="navbar-brand rushtitle" href="#" id="rushbar">
           <img
             src="/media/RUSH logo.png"
-            alt="Bootstrap"
-            width="30"
-            height="24"
+            alt="RushBar"
+            width="70"
+            height="70"
           />
           RushBar
         </a>
+
         <button
           class="navbar-toggler"
           type="button"
@@ -53,7 +60,36 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0"></ul>
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#imagescon"
+                >Images</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#infocon"
+                >Facts</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#testimonial"
+                >Testimonials</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#videoreview"
+                >Interview</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#footer"
+                >Connect with Us</a
+              >
+            </li>
+          </ul>
           <div class="d-flex">
             <a class="btn btn-primary iconspace" href="#" role="button">
               <i class="fa-solid fa-magnifying-glass"></i>
@@ -73,7 +109,9 @@
       <div id="videotext">
         RushBar
         <br />
-        <p id="smalltext">This is Rushbar</p>
+        <button type="button" class="btn btn-primary" id="smalltext">
+          Buy Now
+        </button>
       </div>
     </div>
     <div id="imagescon">
@@ -83,128 +121,138 @@
       </div>
       <div class="card imagecard" style="width: 18rem">
         <img src="media/2.jpg" class="card-img-top" alt="..." />
-        <div class="card-text-overlay">Energizing Goodness</div>
+        <div class="card-text-overlay">Irresistibly Tasty</div>
       </div>
       <div class="card imagecard" style="width: 18rem">
         <img src="media/3.jpg" class="card-img-top" alt="..." />
-        <div class="card-text-overlay">Energizing Goodness</div>
+        <div class="card-text-overlay">Affordable Nutrition</div>
       </div>
       <div class="card imagecard" style="width: 18rem">
         <img src="media/4.jpg" class="card-img-top" alt="..." />
-        <div class="card-text-overlay">Energizing Goodness</div>
+        <div class="card-text-overlay">Easy Digestion</div>
       </div>
     </div>
     <div id="infocon">
       <div id="ingrecon">
-        <p class="ingredients">Ingredients</p>
-        <p class="ingredients">Whole grains 26%</p>
+        <h1>Ingredients:</h1>
+        <p class="ingredients">Whole grains 26%,</p>
         <p class="ingredients">Brown rice,</p>
-        <p class="ingredients">Rolled oats 15%</p>
-        <p class="ingredients">Honey Almonds 12%</p>
-        <p class="ingredients">Dates seeds 9%</p>
-        <p class="ingredients">BELGIUMOARK CHOCOLATE 6%</p>
-        <p class="ingredients">peanut protien powder</p>
+        <p class="ingredients">Rolled oats 15%,</p>
+        <p class="ingredients">Honey Almonds 12%,</p>
+        <p class="ingredients">Dates seeds 9%,</p>
+        <p class="ingredients">BELGIUMOARK CHOCOLATE 6%,</p>
+        <p class="ingredients">peanut protien powder,</p>
       </div>
       <div id="nutricon">
+        <h1>Nutritional Facts</h1>
         <table id="nutritionTable">
           <tr>
-            <th>Nutritional facts</th>
-            <th></th>
-          </tr>
-          <tr>
             <td>Energy</td>
-            <td>157 kcal %DV</td>
+            <td>157 kcal</td>
+            <td>%DV</td>
           </tr>
           <tr>
             <td>Protien</td>
-            <td>4.7g 9%</td>
+            <td>4.7g</td>
+            <td>9%</td>
           </tr>
           <tr>
             <td>Total carbs</td>
-            <td>24.3g 8%</td>
+            <td>24.3g</td>
+            <td>8%</td>
           </tr>
           <tr>
             <td>Dietary fibre</td>
-            <td>3.2g 13%</td>
+            <td>3.2g</td>
+            <td>13%</td>
           </tr>
           <tr>
             <td>Sugar</td>
             <td>7.69</td>
+            <td>-</td>
           </tr>
           <tr>
             <td>FAT</td>
-            <td>5.6g 9%</td>
+            <td>5.6g</td>
+            <td>9%</td>
           </tr>
           <tr>
             <td>MUFA</td>
             <td>2.39</td>
+            <td>-</td>
           </tr>
           <tr>
             <td>PUFA</td>
             <td>1.9g</td>
+            <td>-</td>
           </tr>
           <tr>
-            <td colspan="2">*APPROX value %DV based on 2000kcal Diet.</td>
+            <td colspan="3">*APPROX value %DV based on 2000kcal Diet.</td>
           </tr>
         </table>
       </div>
     </div>
-    <center>
-      <h1>Testimoney</h1>
-    </center>
-    <div id="testcon">
-      <div class="card" style="width: 18rem">
-        <div class="card-body">
-          <q
-            >Rush bars are my daily power boost! Packed with goodness, they're
+    <!-- Testimonials -->
+    <div id="testimonial">
+      <h1 id="testtitle">Testimonials</h1>
+      <div id="testicon">
+        <div class="card cardtest" style="width: 18rem">
+          <div class="card-body">
+            <i class="fa-solid fa-quote-left quotes"></i>
+            Rush bars are my daily power boost! Packed with goodness, they're
             tasty, easy on the pocket, and perfect for my on-the-go lifestyle. A
-            guilt-free indulgence!</q
-          >
-          <h5>-Riya Gupta</h5>
+            guilt-free indulgence!
+            <h5>-Riya Gupta</h5>
+          </div>
         </div>
-      </div>
-      <div class="card" style="width: 18rem">
-        <div class="card-body">
-          <q
-            >Rush bars are my daily power boost! Packed with goodness, they're
-            tasty, easy on the pocket, and perfect for my on-the-go lifestyle. A
-            guilt-free indulgence!</q
-          >
-          <h5>-Riya Gupta</h5>
+        <div class="card cardtest" style="width: 18rem">
+          <div class="card-body">
+            <i class="fa-solid fa-quote-left quotes"></i>
+            As a fitness freak, I swear by Rush bars! Chocolatey delight with
+            wholesome ingredients. They're my go-to snack, keeping me energized
+            without breaking the bank.
+            <h5>-Karan Sharma</h5>
+          </div>
         </div>
-      </div>
-      <div class="card" style="width: 18rem">
-        <div class="card-body">
-          <q
-            >Rush bars are my daily power boost! Packed with goodness, they're
-            tasty, easy on the pocket, and perfect for my on-the-go lifestyle. A
-            guilt-free indulgence!</q
-          >
-          <h5>-Riya Gupta</h5>
+        <div class="card cardtest" style="width: 18rem">
+          <div class="card-body">
+            <i class="fa-solid fa-quote-left quotes"></i>
+            Rush bars make my busy days a breeze! Tasty, easy to digest, and
+            budget-friendly. A must-have for health-conscious professionals like
+            me. Love the natural goodness!
+            <h5>-Neha Patel</h5>
+          </div>
         </div>
-      </div>
-      <div class="card" style="width: 18rem">
-        <div class="card-body">
-          <q
-            >Rush bars are my daily power boost! Packed with goodness, they're
-            tasty, easy on the pocket, and perfect for my on-the-go lifestyle. A
-            guilt-free indulgence!</q
-          >
-          <h5>-Riya Gupta</h5>
+        <div class="card cardtest" style="width: 18rem">
+          <div class="card-body">
+            <i class="fa-solid fa-quote-left quotes"></i>
+            Rush bars – my daily dose of yum! Packed with nuts, seeds, and a
+            chocolaty kick. Easy on the stomach, easy on the wallet. Fitness
+            fuel that fits my hustle!
+            <h5>-Amit Khanna</h5>
+          </div>
         </div>
       </div>
     </div>
+    <!-- Product Review -->
     <div id="videoreview">
       <h1>Product Review</h1>
-      <video src="media/My movie 3.mp4" id="video" loop autoplay muted></video>
+      <video src="media/My movie 3.mp4" id="review" loop autoplay muted></video>
     </div>
   </body>
-  <footer>
-    <div id="icons">
-      <i class="fa-brands fa-instagram"></i>
-      <i class="fa-brands fa-facebook"></i>
-      <i class="fa-brands fa-x-twitter"></i>
-      <i class="fa-brands fa-youtube"></i>
+  <!-- footer -->
+  <footer id="footer">
+    <div id="footericons">
+      <i class="fa-brands fa-instagram icons"></i>
+      <i class="fa-brands fa-facebook icons"></i>
+      <i class="fa-brands fa-x-twitter icons"></i>
+      <i class="fa-brands fa-youtube icons" id="youtube"></i>
+    </div>
+    <div id="footercontact">
+      <div id="footeremail" class="footerinfo">
+        Email - ram15.panjwani@gmail.com
+      </div>
+      <div id="footerphone" class="footerinfo">Phone Number - 9920931278</div>
     </div>
   </footer>
   <script
