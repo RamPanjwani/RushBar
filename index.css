@@ -37,6 +37,7 @@ a > img {
 #video {
     max-width: 70%;
     display: block;
+    height:auto;
     margin: 0 auto;
     opacity: 50%;
 }
@@ -189,10 +190,35 @@ footer{
 #footeremail{
     margin-right: 4%;
 }
+#Credits{
+    font-size: 1.5vw;
+    text-align: center;
+}
 @media screen and (max-width: 767px) {
     .cardtest{
         height:10%;
         margin-bottom: 1%;
+    }
+    #video{
+        max-width: 90%;
+        margin: 0 auto;
+        display: block;
+    }
+    #review {
+        max-width: 90%;
+        margin: 0 auto;
+        display: block;
+    }
+      #footercontact{
+        text-align: center;
+        font-size: 5vw;
+        flex-direction: column;
+    }
+    #Credits{
+        font-size: 5vw;
+    }
+    .icons{
+        font-size: 10vw;
     }
 }
   
